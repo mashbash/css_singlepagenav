@@ -13,30 +13,36 @@
   <title></title>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>My Super SaaS</h1>
-    </header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Tour</a></li>   
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      <br clear="all">
-    </nav>
+
+    <div class ="headerbar">
+      <header>
+        <h1>My Super SaaS</h1>
+      </header>
+      <nav>
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#tour">Tour</a></li>   
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <br clear="all">
+      </nav>
+    </div>
+     <div class="container"> 
     <div class="content">
       <h2>You are so totally going to love this application.</h2>
       <div id="registration">
         <form name="sign_up" action="#" method="post">
-          <label for="email">Email</label>
-          <input type="text" name="email">
-          <label for="password">Password</label>
-          <input type="password" name="password">
-
+          <div class ='field'>
+          <input type="text" name="email" placeholder="Email">
+          </div>
+          <div class ='field'>
+          <input type="password" name="password" placeholder="Password">
+          </div>
+          <div class ='field'>
           <button type="submit">Sign Up</button>
+          </div>
         </form>
       </div>
       <div id="buzz">
@@ -54,7 +60,8 @@
           <br><cite>- Some guy on the street</cite>
         </blockquote>
       </div>
-      <div id="tour">
+      <div id="tour" >
+        <a name="tour">
         <h2>Tour</h2>
         <h3>Some of the super features</h3>
         <div class="feature">
@@ -77,6 +84,7 @@
         </div>
       </div>
       <div id="pricing">
+        <a name="pricing">
         <h2>Pricing</h2>
         <dl>
           <dt>Basic</dt>
@@ -88,11 +96,13 @@
         </dl>
       </div>
       <div id="about">
+        <a name="about">
         <h2>About</h2>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
         <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
       </div>
       <div id="contact">
+        <a name="contact">
         <h2>Contact</h2>
         <table>
           <tbody>
